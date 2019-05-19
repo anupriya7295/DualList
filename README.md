@@ -2,7 +2,7 @@
 
 > Dual List Component for [Vue.js](https://vuejs.org) with [bootstrap-vue](https://bootstrap-vue.js.org/).
 
-- [Docs](src/README.md)
+- [Docs](src/components/README.md)
 - [Demo]()
 
 ## Main
