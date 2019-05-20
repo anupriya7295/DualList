@@ -1,11 +1,11 @@
 /*!
- * dual-list v0.1.0
- * undefined
+ * dual-list v1.0.0
+ * https://github.com/anupriya7295/DualList#readme
  *
- * Copyright 2018-present undefined
- * Released under the undefined license
+ * Copyright 2018-present Anupriya V
+ * Released under the MIT license
  *
- * Date: 2019-05-19T14:48:36.320Z
+ * Date: 2019-05-20T09:52:44.465Z
  */
 
 (function (global, factory) {
@@ -103,7 +103,9 @@
 	      type: String
 	    },
 	    options: {},
-	    selected: {},
+	    selected: {
+	      default: []
+	    },
 	    enableOptionSearch: {
 	      type: Boolean,
 	      default: true
@@ -197,8 +199,7 @@
 	    selectedItems: function selectedItems() {
 	      return this.getSearchData(this.selectedSearch, this.selected);
 	    }
-	  },
-	  components: {}
+	  }
 	};
 
 	function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier
@@ -463,7 +464,7 @@
 
 	var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 	  if (!inject) return;
-	  inject("data-v-44c6d60f_0", {
+	  inject("data-v-26f6d980_0", {
 	    source: ".dualBlock{height:120px;overflow-y:scroll;font-size:13px}.card-body{padding:4px}.searchBox{width:97%}",
 	    map: undefined,
 	    media: undefined
