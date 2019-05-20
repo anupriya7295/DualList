@@ -1,7 +1,7 @@
 {
   "name": "dual-list",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rollup -c --environment BUILD:production",
@@ -14,6 +14,10 @@
     "src",
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anupriya7295/DualList.git"
+  },
   "dependencies": {},
   "peerDependencies": {
     "bootstrap-vue": "^2.0.0-rc.20",
