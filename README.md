@@ -25,11 +25,37 @@ npm install dual-list
 
 ```js
 import Vue from 'vue';
-import dual-list from 'dual-list';
+import FormDualList from 'dual-list';
 ```
 
 ```html
-<dual-list :options="options"/>
+<template>
+    <FormDualList :options="options"/>
+</template>
+
+<script>
+  export default {
+    components: {
+      FormDualList
+    },
+    data() {
+      return {
+        options:[
+        {key: 'Tamil Nadu', value: 'TN'},
+        {key: 'Kerala', value: 'KL'},
+        {key: 'Karnataka', value: 'KA'},
+        {key: 'Maharastra', value: 'MH'},
+        {key: 'Delhi', value: 'DL'},
+        {key: 'Goa', value: 'GA'},
+        {key: 'Punjab', value: 'PB'},
+        {key: 'Orissa', value: 'OR'},
+        {key: 'Bihar', value: 'BR'},
+        ],
+        state:['Tamil Nadu', 'Kerala', 'Karnataka', 'Maharastra', 'Delhi', 'Goa', 'Punjab','Orissa','Bihar'] // option can also be like this
+      };
+    },
+  };
+</script>
 ```
 ## License
 

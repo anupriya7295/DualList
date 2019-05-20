@@ -18,6 +18,22 @@
     "type": "git",
     "url": "git+https://github.com/anupriya7295/DualList.git"
   },
+  "keywords": [
+    "dual list",
+    "vue-component",
+    "component",
+    "vue",
+    "vue.js",
+    "front-end",
+    "web"
+  ],
+  "author": {
+    "name": "Anupriya V"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anupriya7295/DualList/issues"
+  },
   "dependencies": {},
   "peerDependencies": {
     "bootstrap-vue": "^2.0.0-rc.20",

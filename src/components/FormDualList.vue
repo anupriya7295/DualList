@@ -81,15 +81,16 @@
 	</div>
 </template>
 <script>
-
-export default {
+	export default {
   name: 'FormDualList',
   props: {
     label: {
         type: String
     },
     options: {},
-    selected: {},
+    selected: {
+			default: []
+		},
 		enableOptionSearch: {
 			type: Boolean,
 			default: true
@@ -173,10 +174,9 @@ export default {
 		selectedItems() {
 			return this.getSearchData(this.selectedSearch, this.selected);
 		}
-	},
-  components: {
-  }
+	}
 }
+
 </script>
 
 <style>

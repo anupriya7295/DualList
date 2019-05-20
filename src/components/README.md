@@ -4,11 +4,14 @@
 
 ```html
 <template>
-  <dual-list :options="options"/>
+  <FormDualList :options="options"/>
 </template>
 
 <script>
   export default {
+    components: {
+      FormDualList
+    },
     data() {
       return {
         options:[
@@ -32,7 +35,7 @@
 
 ```html
 <template>
-  <dual-list
+  <FormDualList
   :label="'Dual List'"
   :options="options"
   :selected="selected"
@@ -46,28 +49,4 @@
   :selectedBoxClass="'rightDualList'"
   />
 </template>
-
-<script>
-  export default {
-    data() {
-      return {
-        options:[
-        {key: 'Tamil Nadu', value: 'TN'},
-        {key: 'Kerala', value: 'KL'},
-        {key: 'Karnataka', value: 'KA'},
-        {key: 'Maharastra', value: 'MH'},
-        {key: 'Delhi', value: 'DL'},
-        {key: 'Goa', value: 'GA'},
-        {key: 'Punjab', value: 'PB'},
-        {key: 'Orissa', value: 'OR'},
-        {key: 'Bihar', value: 'BR'},
-        ],
-        selected:[
-            {key: 'Tamil Nadu', value: 'TN'},
-            {key: 'Kerala', value: 'KL'}
-        ]
-      };
-    },
-  };
-</script>
 ```
